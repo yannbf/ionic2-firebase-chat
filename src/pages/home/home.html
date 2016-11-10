@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      FirebaseChat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h3 class="center">
+    Chatzinho
+  </h3>
+  <img class="logo" [src]="imageUrl  || placeHolder" />
+  <button ion-button center (click)="facebookLogin()">
+    <ion-icon class="facebook-icon" name='logo-facebook'></ion-icon>
+    Log In with Facebook
+  </button>
+  <button ion-button center (click)="googleLogin()">
+    <ion-icon class="facebook-icon" name='logo-google'></ion-icon>
+    Log In with Google
+  </button>
+</ion-content>
+
